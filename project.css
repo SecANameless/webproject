@@ -8,17 +8,28 @@ body
 {
   width: 100%;
   height: 100%;
-  background-color: white;
+ 
   display: flex;
   align-items: center;
+  width: 100%;
+height: 100%;
+background-image: url(images/the\ mother.jpg);
+background-repeat: no-repeat;
 }
 .content
 {
   position: relative;
-color: black;
+color: white;
+font-weight: 100;
 margin-top: 50px;
 padding-left: 50px;
 
+}
+
+#bgpic
+{
+  width: 100%;
+  background-repeat: no-repeat;
 }
 .content .details
 {
@@ -32,10 +43,73 @@ margin-top: 10px;}
   padding: 5px;
   background-color: rgb(255, 191, 0);
   border-radius: 5px;
+  color: black;
 }
 #rating 
 {
   padding: 5px;
   background-color: rgb(255, 191, 0);
   border-radius: 5px;
+  color: black;
+}
+.btn
+{
+  margin-top: 20px;
+}
+.btn a
+{
+padding: 8px 20px;
+font-size:20px;
+font-weight: 300;
+background:linear-gradient(#7597EB,#5880E5, #2455CF);
+color: black;
+border-radius: 5px;
+text-decoration: none;
+}
+ section
+{
+  position: absolute;
+  width: 100%;
+  height:auto;
+  padding:0px 50px;
+  margin-top: 150px;
+  color: white;
+ 
+  
+
+}
+section .card
+{
+position: relative;
+width: 750px;
+height: 200px;
+border: 1px solid white;
+display: flex;
+align-items: center;
+overflow-x: auto;
+}
+/*for removing scrollbar -*/
+section .card  ::-webkit-scrollbar
+{
+display: none;
+}
+
+/* design of the inner cards*/
+section .card .acard
+{
+  position: relative;
+ height: 175px;
+  min-width:130px;
+  border: 1px solid white;
+  border-radius: 8px ;
+  margin-right: 6px;
+  background-color: black;
+  transition: .3.5s , linear;
+}
+/* poster of recommended series*/
+section .card .acard .banner
+{
+width: 100%;
+height: 100%;
+border-radius: 8px;
 }
